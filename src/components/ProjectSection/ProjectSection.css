@@ -1,0 +1,15 @@
+.project-section {
+  width: 100%;
+  height: auto;
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-section__content {
+  width: calc(100% - 140px);
+  max-width: 1280px;
+}
+.project-section_backgruond-color_light {
+  background-color: #272727;
+}

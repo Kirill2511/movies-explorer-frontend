@@ -1,0 +1,32 @@
+.navtab {
+  background-color: #272727;
+  width: 100%;
+}
+.navtab__list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+.navtab__list-link {
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.navtab__list-item {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.navtab__list-item:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,28 @@
+.about-project {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  grid-gap: 30px;
+  margin: 70px 0 110px;
+}
+
+.about-project__table {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 28px;
+}
+
+.about-project__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.about-project__desription {
+  margin: 0;
+}
