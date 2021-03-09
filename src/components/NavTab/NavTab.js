@@ -5,17 +5,9 @@ function NavTab() {
   return (
     <nav className="navtab">
       <ul className="navtab__list">
-        {[
-          { value: 'О проекте', href: '#about' },
-          { value: 'Технологии', href: '#stack' },
-          { value: 'Обо мне', href: '#me' },
-        ].map(({ value, href }) => (
-          <li key={value} className="navtab__list-item">
-            <a href={href} className="navtab__list-link">
-              {value}
-            </a>
-          </li>
-        ))}
+        <li className="navtab__list-item"><a className="navtab__list-link" href="#about">О проекте</a></li>
+        <li className="navtab__list-item"><a className="navtab__list-link" href="#techs">Технологии</a></li>
+        <li className="navtab__list-item"><a className="navtab__list-link" href="#me">Обо мне</a></li>
       </ul>
     </nav>
   )

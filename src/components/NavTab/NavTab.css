@@ -30,3 +30,14 @@
 .navtab__list-item:last-child {
   margin-right: 0;
 }
+
+@media screen and (max-width: 480px) {
+  .navtab__list-item {
+    margin-right: 24px;
+  }
+
+  .navtab__list-link {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}

@@ -1,0 +1,122 @@
+.techs{
+  width: 100%;
+  background-color: #272727;
+}
+
+.techs__title {
+  display: block;
+  padding: 0 0 23px;
+  border-bottom: 1px solid #DADADA;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.22;
+  letter-spacing: -0.04em;
+  margin: 100px 0 90px;
+}
+
+.techs__content {
+  margin: 0 auto;
+  width: calc(100% - 140px);
+  display: flex;
+  flex-direction: column;
+}
+
+.techs__number {
+  margin: 0 auto 26px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+.techs__description {
+  margin: 0 auto 100px;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  letter-spacing: -0.04em;
+  width: 460px;
+}
+
+.techs__list {
+  margin: 0 auto 100px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 90px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  list-style: none;
+}
+
+.techs__list-item {
+  min-width: 90px;
+  max-height: 60px;
+  padding: 22px 0;
+  background: #303030;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+@media screen and (max-width: 850px) {
+  .techs__content {
+    width: calc(100% - 100px);
+  }
+
+  .techs__list {
+    grid-template-columns: repeat(7, 84px);
+  }
+
+  .techs__list-item {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .techs__title {
+    margin-bottom: 60px;
+  }
+
+  .techs__description {
+    max-width: 60%;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 86px;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .techs__list {
+    grid-template-columns: repeat(3, 84px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tech {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .techs__content {
+    width: calc(100% - 28px);
+  }
+
+  .techs__number {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+
+  .techs__description {
+    font-size: 11px;
+    line-height: 16px;
+    max-width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .techs__list {
+    grid-template-columns: repeat(2, 84px);
+  }
+}
