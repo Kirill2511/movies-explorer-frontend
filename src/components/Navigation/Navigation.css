@@ -1,0 +1,36 @@
+
+.account-link {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all .5s ease;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background: #313131;
+}
+
+.account-link:hover {
+  opacity: .7;
+}
+
+.account-link_place_mobile-menu {
+  margin: auto auto 90px;
+}
+
+.account-link_place_mobile-menu.account-link_active {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+@media screen and (max-width: 850px) {
+  .account-link_place_header {
+    display: none;
+  }
+}

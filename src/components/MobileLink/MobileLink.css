@@ -1,0 +1,25 @@
+.mobile-link {
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  padding: 0 0 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.mobile-link:hover {
+  opacity: .6;
+}
+
+.mobile-link:first-child {
+  margin-bottom: 24px;
+}
+
+.mobile-link_active {
+  border-bottom: 2px solid #FFFFFF;
+}

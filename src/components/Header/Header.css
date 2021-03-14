@@ -1,54 +1,83 @@
+
 .header {
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
-  height: 74px;
-  background-color: #073042;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 70px;
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.header__content {
+.header__nav {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  width: calc(100% - 140px);
-  max-width: 1280px;
-  margin: auto;
 }
 
-.header__profile {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  align-items: center;
+.header__link {
+  margin-right: 16px;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+  transition: all .5s ease;
 }
 
-.header__button {
-  width: 76px;
-  height: 32px;
-  font-weight: 500;
+.header__link:hover {
+  opacity: .7;
+}
+
+.header__link:last-of-type {
+  margin-right: 0;
+}
+
+.header__link_type_signup {
   font-size: 12px;
-  line-height: 1.3;
-  background-color: #3DDC84;
-  outline: none;
-  padding: 0;
-  border: 0;
+  line-height: 16px;
+}
+
+.header__link_type_signin {
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  background: #3DDC84;
+  padding: 6px 18px;
   border-radius: 3px;
-  cursor: pointer;
-}
-.header__title {
-  color: #ffffff;
-  font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 1.3;
-  outline: none;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
+  border: solid 2px #3DDC84;
+}
+
+.header__link_type_signin:hover {
+  color: #3DDC84;
+  background: none;
+  box-shadow: 0px 0px 7px #3DDC84;
+}
+
+.header__account-icon {
+  width: 26px;
+  height: 26px;
+  margin-left: 7px;
+  background-color: #313131;
+  border-radius: 50px;
+  background-image: url('../../images/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10.38px 10.67px;
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    padding: 18px 30px;
+  }
+
+  .header__link_type_movies {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 18px 14px;
+  }
 }

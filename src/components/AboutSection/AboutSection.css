@@ -1,0 +1,13 @@
+.about-section {
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+  width: 100%;
+  height: 30px;
+  margin: 0 0 23px 0;
+}
+.about-section__border {
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+}

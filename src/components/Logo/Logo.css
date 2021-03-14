@@ -1,0 +1,30 @@
+.logo {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+}
+
+.logo__image {
+  fill: #3DDC84;
+  width: 38px;
+  height: 38px;
+  transition: all .5s ease;
+}
+
+.logo__image:hover {
+  fill: #2d6647;
+}
+
+.logo_place_header {
+  margin-right: 44px;
+}
+
+.logo_place_user {
+  margin-bottom: 36px;
+}
+
+@media screen and (max-width: 850px) {
+  .logo {
+    margin-right: 0;
+  }
+}

@@ -1,29 +1,50 @@
 .promo {
-  width: 100%;
-  min-height: 525px;
-  background-color: #073042;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-image: url("../../images/background-logo.png");
-  background-position: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: -100px;
+  padding-top: 100px;
+  background-color: #073042;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .promo__content {
-  width: calc(100% - 140px);
-  max-width: 1280px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  min-height: 524px;
   margin: auto;
+  background-image: url("../../images/background-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .promo__title {
-  text-align: center;
-  max-width: 730px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
   line-height: 58px;
+  max-width: 730px;
+  text-align: center;
   letter-spacing: -0.04em;
+}
+
+@media screen and (max-width: 850px) {
+  .promo__content {
+    background-size: 320px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .promo__content {
+    background-size: 240px;
+  }
+
+  .promo__title {
+    font-size: 29px;
+    line-height: 37px;
+    max-width: 95%;
+  }
 }
