@@ -60,7 +60,6 @@
 
 @media screen and (max-width: 850px) {
   .filter-checkbox {
-    justify-content: flex-end;
     margin-bottom: 40px;
     padding-top: 33px;
   }

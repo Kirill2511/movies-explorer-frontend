@@ -15,7 +15,7 @@
   border: none;
   outline: none;
   background: none;
-  max-width: calc(100% - 34px);
+  width: calc(100% - 60px);
   font-size: 13px;
   line-height: 17px;
   padding: 14px 0 14px 22px;
@@ -41,6 +41,11 @@
 .search-form__btn:hover {
   box-shadow: 0 0 7px #4285F4;
   cursor: pointer;
+}
+
+.search-form__btn:disabled {
+  background: #202020;
+  filter: blur(2px);
 }
 
 @media screen and (max-width: 450px) {

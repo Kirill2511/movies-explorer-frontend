@@ -1,5 +1,6 @@
 {
   "extends": [
+    "eslint:recommended",
     "airbnb-base",
     "plugin:react-hooks/recommended",
     "react-app",
@@ -23,8 +24,7 @@
     "react-hooks"
   ],
   "env": {
-    "browser": true,
-    "node": true,
-    "jasmine": true
+    "es6": true,
+    "browser": true
   },
 }

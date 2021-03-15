@@ -7,7 +7,9 @@ import AccountLink from '../Navigation/Navigation';
 
 function MobileMenu({ setsMobileMenuOpened, isMobileMenuOpened }) {
   const history = useHistory();
-  const mobileMenuActiveSelector = isMobileMenuOpened ? 'mobile-menu_active' : '';
+  const mobileMenuActiveSelector = isMobileMenuOpened
+    ? 'mobile-menu_active'
+    : '';
   function closeMobileMenu() {
     setsMobileMenuOpened(false);
   }
@@ -18,7 +20,7 @@ function MobileMenu({ setsMobileMenuOpened, isMobileMenuOpened }) {
   return (
     <div className={`mobile-menu ${mobileMenuActiveSelector}`}>
       <nav className="mobile-menu__navigation">
-      <button className="mobile-menu__close-btn" onClick={closeMobileMenu}/>
+        <button className="mobile-menu__close-btn" onClick={closeMobileMenu} />
         <MobileLink
           setsMobileMenuOpened={setsMobileMenuOpened}
           path="/"
@@ -34,7 +36,7 @@ function MobileMenu({ setsMobileMenuOpened, isMobileMenuOpened }) {
           path="/saved-movies"
           linkText="Сохраненные фильмы"
         />
-        <AccountLink openAccount={openAccount} place={'mobile-menu'}/>
+        <AccountLink openAccount={openAccount} place={'mobile-menu'} />
       </nav>
     </div>
   );

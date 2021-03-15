@@ -1,12 +1,15 @@
 import './Techs.css';
 
-function Techs(){
+function Techs() {
   return (
-    <section id="techs" className="techs" >
+    <section id="techs" className="techs">
       <div className="techs__content">
         <h2 className="techs__title">Технологии</h2>
         <h3 className="techs__number">7 технологий</h3>
-        <p className="techs__description">На курсе веб-разработки мы освоили технологии, которые применили в &#10; дипломном проекте.</p>
+        <p className="techs__description">
+          На курсе веб-разработки мы освоили технологии, которые применили в
+          &#10; дипломном проекте.
+        </p>
         <ul className="techs__list">
           <li className="techs__list-item">HTML</li>
           <li className="techs__list-item">CSS</li>
@@ -18,7 +21,7 @@ function Techs(){
         </ul>
       </div>
     </section>
-  )
+  );
 }
 
 export default Techs;

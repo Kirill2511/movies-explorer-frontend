@@ -1,5 +1,5 @@
-import React from 'react'
-import './Promo.css'
+import React from 'react';
+import './Promo.css';
 
 const Promo = () => (
   <section className="promo">
@@ -9,6 +9,6 @@ const Promo = () => (
       </h1>
     </div>
   </section>
-)
+);
 
-export default Promo
+export default Promo;
