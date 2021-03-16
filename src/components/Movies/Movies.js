@@ -19,6 +19,7 @@ function Movies({
   isSorted,
   setIsSorted,
 }) {
+  const MOVE_DURATION = 40;
   const [searchText, setSearchText] = React.useState('');
   const [isShortFilm, setIsShortFilm] = React.useState(false);
   const [limit, setLimit] = React.useState(getNumberOfMovies(width));
@@ -42,7 +43,7 @@ function Movies({
 
   function filterShortMovies(moviesArr) {
     return moviesArr.filter(movie =>
-      isShortFilm ? movie.duration <= 40 : true,
+      isShortFilm ? movie.duration <= MOVE_DURATION : true,
     );
   }
 

@@ -79,7 +79,6 @@ function App() {
       return;
     }
     if (enteredPath !== '/') {
-      history.push(enteredPath);
       setEnteredPath('');
     }
   }, [isLoggedIn]);
