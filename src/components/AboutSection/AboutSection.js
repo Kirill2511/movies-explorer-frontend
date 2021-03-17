@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import './AboutSection.css'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './AboutSection.css';
 
 const AboutSection = ({ title, id }) => (
   <>
@@ -9,10 +9,10 @@ const AboutSection = ({ title, id }) => (
     </h2>
     <div className="about-section__border" />
   </>
-)
+);
 
 AboutSection.propTypes = {
   title: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-}
-export default AboutSection
+};
+export default AboutSection;

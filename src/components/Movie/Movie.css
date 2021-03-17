@@ -2,7 +2,6 @@
   width: 100%;
   border-radius: 6px;
   background: #222222;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
 }
 
 .movie__cover {
@@ -27,6 +26,10 @@
   line-height: 16px;
   min-height: 32px;
   margin: 0;
+  width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .movie__btn {
@@ -63,6 +66,8 @@
 .movie__delete {
   transition: all .5s ease;
   fill: white;
+  width: 7px;
+  height: 7px;
 }
 
 .movie__delete:hover {
@@ -76,6 +81,7 @@
   margin: 0;
   padding-top: 6px;
   color: #8B8B8B;
+  white-space: pre-line;
 }
 
 .movie__break {

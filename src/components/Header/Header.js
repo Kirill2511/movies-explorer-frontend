@@ -6,24 +6,46 @@ import Logo from '../Logo/Logo';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import AccountLink from '../Navigation/Navigation';
 
-function Header({ setsMobileMenuOpened }) {
+function Header({ setsMobileMenuOpened, isLoggedIn }) {
   const history = useHistory();
   function openAccount() {
     history.push('/profile');
   }
   return (
     <header className="header">
-      {/* TODO: Временно */}
       <nav className="header__nav">
-        <Logo place={'header'}/>
+        <Logo place={'header'} />
       </nav>
       <nav className="header__nav">
-        <Link className="header__link header__link_type_movies" to="/movies">Фильмы</Link>
-        <Link className="header__link header__link_type_movies" to="/saved-movies">Сохраненные фильмы</Link>
-        <Link className="header__link header__link_type_signup" to="/signup">Регистрация</Link>
-        <Link className="header__link header__link_type_signin" to="/signin">Войти</Link>
-        <AccountLink openAccount={openAccount} place={'header'}/>
-        <BurgerMenu setsMobileMenuOpened={setsMobileMenuOpened}/>
+        {isLoggedIn && (
+          <Link className="header__link header__link_type_movies" to="/movies">
+            Фильмы
+          </Link>
+        )}
+        {isLoggedIn && (
+          <Link
+            className="header__link header__link_type_movies"
+            to="/saved-movies"
+          >
+            Сохраненные фильмы
+          </Link>
+        )}
+        {!isLoggedIn && (
+          <Link className="header__link header__link_type_signup" to="/signup">
+            Регистрация
+          </Link>
+        )}
+        {!isLoggedIn && (
+          <Link className="header__link header__link_type_signin" to="/signin">
+            Войти
+          </Link>
+        )}
+        {isLoggedIn && (
+          <AccountLink openAccount={openAccount} place={'header'} />
+        )}
+        {isLoggedIn && (
+          <BurgerMenu setsMobileMenuOpened={setsMobileMenuOpened} />
+        )}
       </nav>
     </header>
   );
@@ -31,6 +53,7 @@ function Header({ setsMobileMenuOpened }) {
 
 Header.propTypes = {
   setsMobileMenuOpened: PropTypes.func,
+  isLoggedIn: PropTypes.bool,
 };
 
 export default Header;

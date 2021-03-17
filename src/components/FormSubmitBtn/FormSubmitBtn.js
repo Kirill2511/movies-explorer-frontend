@@ -5,7 +5,13 @@ import './FormSubmitBtn.css';
 function FormSubmitBtn({ text, isDisabledBtn }) {
   const btnDisabledSelector = isDisabledBtn ? 'form-submit-btn_disabled' : '';
   return (
-    <button type="submit" className={`form-submit-btn ${btnDisabledSelector}`}>{text}</button>
+    <button
+      type="submit"
+      className={`form-submit-btn ${btnDisabledSelector}`}
+      disabled={isDisabledBtn}
+    >
+      {text}
+    </button>
   );
 }
 

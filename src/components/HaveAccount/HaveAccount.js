@@ -4,10 +4,12 @@ import './HaveAccount.css';
 import { Link } from 'react-router-dom';
 
 const HaveAccount = ({ text, to, linkText }) => (
-    <p className="have-account">
-      {`${text} `}
-      <Link to={to} className="have-account__link">{linkText}</Link>
-    </p>
+  <p className="have-account">
+    {`${text} `}
+    <Link to={to} className="have-account__link">
+      {linkText}
+    </Link>
+  </p>
 );
 
 HaveAccount.propTypes = {

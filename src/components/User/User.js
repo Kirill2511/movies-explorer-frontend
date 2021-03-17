@@ -10,11 +10,23 @@ function User({ title, children }) {
   return (
     <div className="user">
       <div className="user-container">
-        <Logo place="user"/>
+        <Logo place="user" />
         <h3 className="user__title">{title}</h3>
         {children}
-        {location.pathname === '/signup' && <HaveAccount text={'Уже зарегистрированы?'} to={'/signin'} linkText={'Войти'}/>}
-        {location.pathname === '/signin' && <HaveAccount text={'Ещё не зарегистрированы?'} to={'/signup'} linkText={'Регистрация'}/>}
+        {location.pathname === '/signup' && (
+          <HaveAccount
+            text={'Уже зарегистрированы?'}
+            to={'/signin'}
+            linkText={'Войти'}
+          />
+        )}
+        {location.pathname === '/signin' && (
+          <HaveAccount
+            text={'Ещё не зарегистрированы?'}
+            to={'/signup'}
+            linkText={'Регистрация'}
+          />
+        )}
       </div>
     </div>
   );

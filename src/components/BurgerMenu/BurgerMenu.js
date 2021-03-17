@@ -6,12 +6,11 @@ import BurgerMenuImg from '../../images/icon__COLOR_icon-main.svg';
 
 function BurgerMenu({ setsMobileMenuOpened }) {
   function openBurgerMenu() {
-    console.log('open burger menu');
     setsMobileMenuOpened(true);
   }
   return (
     <button className="burger-menu" onClick={openBurgerMenu}>
-      <SVG className="burger-menu__icon" src={BurgerMenuImg}/>
+      <SVG className="burger-menu__icon" src={BurgerMenuImg} />
     </button>
   );
 }

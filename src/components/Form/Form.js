@@ -4,7 +4,7 @@ import './Form.css';
 
 function Form({ handleFormSubmit, children }) {
   return (
-    <form className="form" onSubmit={handleFormSubmit}>
+    <form className="form" onSubmit={handleFormSubmit} noValidate>
       {children}
     </form>
   );

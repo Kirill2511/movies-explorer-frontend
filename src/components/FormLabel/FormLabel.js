@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './FormLabel.css';
 
-const FormLabel = ({ label, children }) => (
-  <label className="form-label">
+const FormLabel = ({ label, name, children }) => (
+  <label className="form-label" htmlFor={name}>
     <span className="form-label__text">{label}</span>
     {children}
   </label>
@@ -12,6 +12,7 @@ const FormLabel = ({ label, children }) => (
 FormLabel.propTypes = {
   label: PropTypes.string,
   children: PropTypes.element,
+  name: PropTypes.string,
 };
 
 export default FormLabel;
